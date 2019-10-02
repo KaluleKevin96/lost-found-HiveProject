@@ -1,0 +1,26 @@
+.head{
+    padding: 90px;
+    text-align: center;
+}
+
+.title{
+    font-weight: bolder;
+    color: white;
+    font-size: 50px;
+    padding: 20px;
+}
+.sub-title{
+    color: red;
+    padding: 20px;
+    
+}
+.footer{
+    background: #000;
+    padding: 20px;
+
+}
+.footer, p{
+    text-align: center;
+    color: beige;
+
+}
