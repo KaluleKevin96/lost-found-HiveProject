@@ -1,0 +1,34 @@
+.container-fluid{
+   background-color: #f8f9fa !important;  
+  padding: 8px;    
+  box-shadow: 10px 10px 10px #b45165;
+  border-radius: 15px;
+  margin: 0.5%;
+  align-content:center;
+   
+  
+}
+
+.row{
+  padding: 8px;
+}
+
+.row-1{
+   
+
+}
+
+.row-2{
+padding:8px;
+}
+.h1{
+  background-color: aliceblue;
+  font-style: italic;
+  text-shadow:rgb(218, 32, 32);
+  box-shadow: rgb(129, 50, 129);
+  text-decoration-style: blue;
+  color: green;
+}
+.nav-bar{
+  background-color: rgb(209, 59, 59);
+}
