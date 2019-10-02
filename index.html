@@ -48,8 +48,79 @@
         <div class="title text-center"> 
             SEARCH <i class="fa fa-search"></i> FOR SOMETHING YOU HAVE LOST 
         </div>
-        <div class="info-block">
-            Fill In Some Of The Details <em>(those you may know)</em>() To Search For An Item you're looking for.
+        
+            <div class="info-block">
+                Fill In Some Of The Details <em>(those you may know)</em>() To Search For An Item you're looking for.
+            </div>
+        <br/> <br/>
+        <div class="container">
+            <div class="search_form">
+                
+                <form class="form" action="" method="">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label class="" for="case_number"> CATEGORY OF ITEM  </label>
+                                <select name="category_of_item" class="form-control" id="category_of_item">
+                                    <option value=""> Select Item Category </option>
+                                    <option value="all"> All Categories </option>
+                                    <option value="national_id"> National ID </option>
+                                    <option value="passport"> Passport </option>
+                                    <option value="driving_permit"> Driving Permit </option>
+                                    <option value="academic_document"> Academic Document </option>
+                                    <option value="land_title"> Land Title </option>
+                                </select>
+                            </div>
+                            
+                            <div class="help-block">
+                                What kind of item is it?
+                            </div>
+                            <br/>
+                            <div class="form-group">
+                                <label class="" for="case_number"> UNIQUE ITEM IDENTIFIER  </label>
+                                <input type="text" class="form-control" name="item_identifier" placeholder="Item Identifier"/>
+                            </div>
+                            
+                            <div class="help-block">
+                                Unique Identifier of the item
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label class="" for="case_number"> NAME OF OWNER  </label>
+                                <input type="text" class="form-control" name="name_of_owner" placeholder="Owner of Lost Item" />
+                            </div>
+                            
+                            <div class="help-block">
+                                <strong> Name of Owner </strong> that is attached onto the lost item.
+                            </div>
+                            <br/>
+                            <div class="form-group">
+                                <label class="" for="case_number"> CASE NUMBER  </label>
+                                <input type="text" class="form-control" name="case_number" placeholder="Assigned Case Number" />
+                            </div>
+                            
+                            <div class="help-block">
+                                If you reported your item as lost at a <strong> Point Of Access (P.O.A) </strong> , enter the case number you were
+                                given.
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label class="" for="case_number"> DATE OF BIRTH  </label>
+                                <input type="date" class="form-control" name="dob" />
+                            </div>
+                            
+                            <div class="help-block">
+                               Date of birth registered on document
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-12">
+                            <input type="submit" class="btn btn-md btn-primary search_button" value="SEARCH" name="search_button"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
 
     <script src='js/jquery-3.3.1.slim.min.js'></script>

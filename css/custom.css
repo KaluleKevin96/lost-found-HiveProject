@@ -1,2 +1,36 @@
+.title {
+    font-size: 180%;
+    padding: 5%;
+    font-family: Roboto,Monserrat,Verdana,Open Sans, sans-serif;
+}
 
+.info-block {
 
+  font-size: 110%;
+  color: lightslategray;
+  margin: 0% 10%;
+  font-family: sans-serif,open sans, Times New Roman;
+}
+ 
+.help-block {
+
+  color: lightslategray;
+  font-size: 80%;
+  font-family: cursive, comic sans;
+}
+
+.search_form .form-control {
+    
+    border: 3px solid #ced4da;
+}
+.search_form label {
+
+    font-family: Times New Roman,Verdana,sans-serif;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.search_form .search_button {
+
+    margin: 24% 0% 0% 20%;
+}
