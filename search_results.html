@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> SEARCH RESULTS </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/fontawesome/css/all.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/custom.css'>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"> LOST & FOUND </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"> Back Home </a> <!-- <span class="sr-only">(current)</span> -->
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"> Log Lost Item </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"> Log Found Item </a>
+                    </div>
+                </li>
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+                <a href="#" class="btn btn-outline-success my-2 my-sm-0"> P.O.A LOG IN </a>
+            </div>
+        </div>
+    </nav>
+    <div class="title text-center">
+        SEARCH <i class="fa fa-search"></i> FOR SOMETHING YOU HAVE LOST
+    </div>
+
+    <div class="info-block" style="font-size:90%;">
+        Fill In Some Of The Details <em>(those you may know)</em>() To Search For An Item you're looking for.
+    </div>
+    <br /> <br />
+    <div class="container">
+        <div class="search_form">
+
+            <form class="form" action="" method="">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-12">
+                        <div class="form-group">
+                            <label class="" for="case_number"> CATEGORY OF ITEM </label>
+                            <select name="category_of_item" class="form-control" id="category_of_item">
+                                <option value=""> Select Item Category </option>
+                                <option value="all"> All Categories </option>
+                                <option value="national_id"> National ID </option>
+                                <option value="passport"> Passport </option>
+                                <option value="driving_permit"> Driving Permit </option>
+                                <option value="academic_document"> Academic Document </option>
+                                <option value="land_title"> Land Title </option>
+                            </select>
+                        </div>
+
+                        <div class="help-block">
+                            What kind of item is it?
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <label class="" for="case_number"> UNIQUE ITEM IDENTIFIER </label>
+                            <input type="text" class="form-control" name="item_identifier"
+                                placeholder="Item Identifier" />
+                        </div>
+
+                        <div class="help-block">
+                            Unique Identifier of the item
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-12">
+                        <div class="form-group">
+                            <label class="" for="case_number"> NAME OF OWNER </label>
+                            <input type="text" class="form-control" name="name_of_owner"
+                                placeholder="Owner of Lost Item" />
+                        </div>
+
+                        <div class="help-block">
+                            <strong> Name of Owner </strong> that is attached onto the lost item.
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-2 col-sm-12 col-12">
+                        <div class="form-group">
+                            <label class="" for="case_number"> DATE OF BIRTH </label>
+                            <input type="date" class="form-control" name="dob" />
+                        </div>
+
+                        <div class="help-block">
+                            Date of birth registered on document
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-12">
+                        <div class="form-group">
+                            <label class="" for="case_number"> CASE NUMBER </label>
+                            <input type="text" class="form-control" name="case_number"
+                                placeholder="Assigned Case Number" />
+                        </div>
+
+                        <div class="help-block">
+                            If you reported your item as lost at a <strong> Point Of Access (P.O.A) </strong> , enter
+                            the case number you were
+                            given.
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-12 col-12">
+                        <!-- <input type="submit" class="btn btn-md btn-primary search_button" value="SEARCH" name="search_button"/> -->
+                        <a href="search_results.html" class="btn btn-md btn-primary search_button" title="SEARCH"> SEARCH</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="search_results table-responsive">
+            <div class="title">
+                SEARCH RESULTS :
+            </div>
+            <div class="info-block" style="font-size:90%; padding: 0% 0% 3% 0%;">
+                This list shows items that have been reported as lost from particular points of access (P.O.A). <br/> 
+                Also items that were logged / reported as found, when and where they were found or placed.
+            </div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th> NAME OF OWNER</th>
+                        <th> ITEM CATEGORY</th>
+                        <th> DATE REPORTED LOST</th>
+                        <th>PLACE REPORTED LOST</th>
+                        <th>DATE REPORTED FOUND</th>
+                        <th>PLACE ITEM WAS FOUND</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kalule Kevin</td>
+                        <td> National ID</td>
+                        <td> 26/09/2019</td>
+                        <td> Muyenga </td>
+                        <td> Not Yet Found</td>
+                        <td> Not Yet Found</td>
+                    </tr>
+                    <tr>
+                        <td> Nyayic Fanny</td>
+                        <td> Passlip</td>
+                        <td> Not Yet Reported</td>
+                        <td> Not Yet Reported </td>
+                        <td class="alert-success"> 02/10/2019</td>
+                        <td class="alert-success"> Ntinda </td>
+                        <td> 
+                            <a href="#" class="btn btn-sm btn-info" title="CLAIM YOUR ITEM">
+                                <i class="fas fa-handshake"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src='js/jquery-3.3.1.slim.min.js'></script>
+    <script src='js/popper.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+</body>
+
+</html>
