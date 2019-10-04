@@ -16,35 +16,68 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"> LOST & FOUND </a>
+    
+        <a class="navbar-brand mr-auto" href="index.html"> LOST & FOUND </a>
+    
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#"> Back Home </a> <!-- <span class="sr-only">(current)</span> -->
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        More
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#"> Log Lost Item </a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#"> Log Found Item </a>
+    
+        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> Back Home </a> <!-- <span class="sr-only">(current)</span> ->
+                    </li>
+    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#"> Log Lost Item </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"> Log Found Item </a>
+                        </div>
+                    </li>
+                </ul> </div> -->
+    
+        <!-- P.O.A lOGIN modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            P.O.A LOGIN
+        </button>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">POINT OF ACCESS LOGIN</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                </li>
-            </ul>
-            <div class="form-inline my-2 my-lg-0">
-                <a href="#" class="btn btn-outline-success my-2 my-sm-0"> P.O.A LOG IN </a>
+                    <div class="modal-body">
+                        <form>
+                            <label for="username">User name or Email</label>
+                            <input type="email" class="form-control" type="text" placeholder="Enter your username or Email">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" placeholder="Type your password">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <p style="color: rgb(61, 25, 25)">Forgot Password? &nbsp;&nbsp; <a href="#">Reset here</a> </p>
+                        <a href="poa_landing_page.html" class="btn btn-primary">Login</a>
+                        <button type="button" class="btn btn-danger">Cancel</button>
+                    </div>
+                </div>
             </div>
         </div>
+    
     </nav>
+
     <div class="title text-center">
         SEARCH <i class="fa fa-search"></i> FOR SOMETHING YOU HAVE LOST
     </div>
@@ -75,16 +108,42 @@
                         <div class="help-block">
                             What kind of item is it?
                         </div>
-                        <br />
-                        <div class="form-group">
-                            <label class="" for="case_number"> UNIQUE ITEM IDENTIFIER </label>
-                            <input type="text" class="form-control" name="item_identifier"
-                                placeholder="Item Identifier" />
-                        </div>
-
+                    <div class="form-group unique_identifier" id="national_id">
+                        <label class=""> National ID Number (NIN) </label>
+                        <input type="text" class="form-control" name="item_identifier" placeholder="NIN" />
+                    
+                    
                         <div class="help-block">
-                            Unique Identifier of the item
+                            The National Identification Number <strong> (NIN) </strong>
                         </div>
+                    </div>
+                    <div class="form-group unique_identifier" id="passport">
+                        <label class=""> Passport Number </label>
+                        <input type="text" class="form-control" name="item_identifier" placeholder="Passport Number" />
+                    
+                    
+                        <div class="help-block">
+                            The passport number
+                        </div>
+                    </div>
+                    <div class="form-group unique_identifier" id="driving_permit">
+                        <label class=""> PERMIT NUMBER </label>
+                        <input type="text" class="form-control" name="item_identifier" placeholder="Permit Number" />
+                    
+                    
+                        <div class="help-block">
+                            The Permit Number
+                        </div>
+                    </div>
+                    <div class="form-group unique_identifier" id="academic_document">
+                        <label class=""> Academic Document Number </label>
+                        <input type="text" class="form-control" name="item_identifier" placeholder="Reg No." />
+                    
+                    
+                        <div class="help-block">
+                            Enter a unique number that identifies the document e.g <em>A Registration Number </em>
+                        </div>
+                    </div>
                     </div>
                     <div class="col-md-3 col-sm-12 col-12">
                         <div class="form-group">
@@ -110,17 +169,34 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-12 col-12">
+                        
+                            <div class="help-block" style="font-size:90%;">
+                                Have you reported the item lost ?
+                            </div>
+                        
                         <div class="form-group">
-                            <label class="" for="case_number"> CASE NUMBER </label>
-                            <input type="text" class="form-control" name="case_number"
-                                placeholder="Assigned Case Number" />
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input class="custom-control-input reported_case" type="radio" name="reported_case" id="reported_case_yes"
+                                    value="case_number">
+                                <label class="custom-control-label" for="reported_case_yes"> Yes </label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input class="custom-control-input reported_case" name="reported_case" type="radio" id="reported_case_no"
+                                    value="no">
+                                <label class="custom-control-label" for="reported_case_no"> No </label>
+                            </div>
                         </div>
 
-                        <div class="help-block">
-                            If you reported your item as lost at a <strong> Point Of Access (P.O.A) </strong> , enter
-                            the case number you were
-                            given.
+                        <div class="form-group case_number" id="case_number">
+                            <label class="" for="case_number"> CASE NUMBER </label>
+                            <input type="text" class="form-control" name="case_number" placeholder="Assigned Case Number" />
+
+                            <div class="help-block">
+                                Case Number you were assigned
+                            </div>
+                        
                         </div>
+
                     </div>
                     <div class="col-md-1 col-sm-12 col-12">
                         <!-- <input type="submit" class="btn btn-md btn-primary search_button" value="SEARCH" name="search_button"/> -->
@@ -132,7 +208,7 @@
 
         <div class="search_results table-responsive">
             <div class="title">
-                SEARCH RESULTS :
+                SEARCH RESULTS : (if any results are found)
             </div>
             <div class="info-block" style="font-size:90%; padding: 0% 0% 3% 0%;">
                 This list shows items that have been reported as lost from particular points of access (P.O.A). <br/> 
@@ -152,24 +228,59 @@
                 <tbody>
                     <tr>
                         <td>Kalule Kevin</td>
-                        <td> National ID</td>
+                        <td> Academic Document </td>
                         <td> 26/09/2019</td>
                         <td> Muyenga </td>
                         <td> Not Yet Found</td>
                         <td> Not Yet Found</td>
                     </tr>
                     <tr>
-                        <td> Nyayic Fanny</td>
-                        <td> Passlip</td>
+                        <td> Atukwasize Chrisogon</td>
+                        <td> National ID </td>
                         <td> Not Yet Reported</td>
                         <td> Not Yet Reported </td>
-                        <td class="alert-success"> 02/10/2019</td>
-                        <td class="alert-success"> Ntinda </td>
+                        <td class="alert-success"> 1/10/2019</td>
+                        <td class="alert-success"> Kansanga </td>
                         <td> 
-                            <a href="#" class="btn btn-sm btn-info" title="CLAIM YOUR ITEM">
+                            <a href="confirm_item.html" class="btn btn-sm btn-info" title="CLAIM YOUR ITEM">
                                 <i class="fas fa-handshake"></i>
                             </a>
                         </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <br/> <hr/> <br/>
+
+        <div class="search_results table-responsive">
+            <div class="title">
+                SEARCH RESULTS : (if no results are found)
+            </div>
+            <div class="info-block" style="font-size:90%; padding: 0% 0% 3% 0%;">
+                This list shows items that have been reported as lost from particular points of access (P.O.A). <br />
+                Also items that were logged / reported as found, when and where they were found or placed.
+            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th> NAME OF OWNER</th>
+                        <th> ITEM CATEGORY</th>
+                        <th> DATE REPORTED LOST</th>
+                        <th>PLACE REPORTED LOST</th>
+                        <th>DATE REPORTED FOUND</th>
+                        <th>PLACE ITEM WAS FOUND</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       
+                        <td colspan="6" class="text-center text-info"> 
+                            NO ITEMS WERE FOUND MATCHING THE INFORMATION YOU ENTERED. 
+                            <br/>
+                            Please go to the nearest Point Of Access and report your item as lost.
+                        </td>
+                      
                     </tr>
                 </tbody>
             </table>
@@ -179,6 +290,46 @@
     <script src='js/jquery-3.3.1.slim.min.js'></script>
     <script src='js/popper.min.js'></script>
     <script src='js/bootstrap.min.js'></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $(".unique_identifier").hide();
+            $("#case_number").hide();
+
+            //hiding or showing the case number text box based on whether or not item was reported lost
+            $('.reported_case').click(function () {
+
+                var inputValue = $(this).attr("value");
+
+                var targetBox = $("#" + inputValue);
+
+                $(".case_number").not(targetBox).hide();
+
+                $(targetBox).show();
+            });
+
+            //function for choosing which input to show based on what category of item is chosen
+            $("#category_of_item").change(function () {
+
+                $(this).find("option:selected").each(function () {
+
+                    var optionValue = $(this).attr("value");
+
+                    if (optionValue) {
+
+                        $(".unique_identifier").not("#" + optionValue).hide();
+                        $("#" + optionValue).show();
+
+                    } else {
+
+                        $(".unique_identifier").hide();
+                    }
+                });
+            }).change();
+        });
+    </script>
+
 </body>
 
 </html>

@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .row {
+            /* padding-left:165px; */
+        }
+    </style>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+
+    <title>CONFIRM AND CLAIM ITEM </title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <a class="navbar-brand mr-auto" href="index.html"> LOST & FOUND </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"> Back Home </a> <!-- <span class="sr-only">(current)</span> ->
+                        </li>
+        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                More
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#"> Log Lost Item </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"> Log Found Item </a>
+                            </div>
+                        </li>
+                    </ul> </div> -->
+
+        <!-- P.O.A lOGIN modal ->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            P.O.A LOGIN
+        </button>
+
+        <!-- Modal ->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">POINT OF ACCESS LOGIN</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <label for="username">User name or Email</label>
+                            <input type="email" class="form-control" type="text"
+                                placeholder="Enter your username or Email">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" placeholder="Type your password">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <p style="color: rgb(61, 25, 25)">Forgot Password? &nbsp;&nbsp; <a href="#">Reset here</a> </p>
+                        <a href="poa_landing_page.html" class="btn btn-primary">Login</a>
+                        <button type="button" class="btn btn-danger">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+    </nav>
+    <!-- Navbar End -->
+
+    <h1 class="dog">Confirm and Claim Item</h1>
+    <br>
+
+    <p id="parag">Dear Atukwasize Chrisogon, we have identified an item that fits <br>to the description of what you
+        declared as lost.
+        <br> Please confirm below if the item is yours or not, and proceed to <br>follow further instructions of payment
+        at the bottom of your screen
+    </p>
+
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 found_item_details">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <span>Name</span>
+                        <p> Atukwasize Chrisogon </p>
+
+                    </div>
+                    <div class="col-md-6">
+                        <span>Item Category</span>
+                        <p> National ID </p>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <span>Date Reported Lost</span>
+                        <p> Not Yet Reported </p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <span>Place Item Reported Lost</span>
+                        <p> Not Yet Reported </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <span> Date Reported Found</span>
+                        <p> 1/10/2019 </p>
+                    </div>
+                    <div class="col-md-6">
+                        <span>Place Item was Found</span>
+                        <p> Kansanga </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="images/ID.jpg" class="rounded" alt="Chrisogon's Identity Card">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container confirm_buttons">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6 confirm_yes text-center">
+                        <!-- <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="on" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Yes, it is mine
+                    </label>
+                </div> -->
+                        <span class="btn btn-success" id="confirm_yes">YES <i class="fa fa-thumbs-up"></i> </span>
+                    </div>
+                    <div class="col-md-6 confirm_no text-center">
+                        <!-- <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="on" id="defaultCheck2">
+                    <label class="form-check-label" for="defaultCheck2">
+                        No, it is not mine
+                    </label>
+                </div> -->
+                        <span class="btn btn-danger" id="confirm_no"> NO <i class="fa fa-thumbs-down"></i> </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="container payment_instructions">
+                    <div id="payment_instructions">
+                        <p class="text-center help-block" id="finch" style="font-size:105%;">
+                            Thank you for claiming your item. <br /> Kindly follow the payment procedure
+                            through mobile money in order to get the details about where your item is and who you can
+                            contact to aquire
+                            it:
+                        </p>
+                        <ol>
+                            <li>Dial *165# on your cell phone</li>
+                            <li>Go to payments (4)</li>
+                            <li>Goods and services (4)</li>
+                            <li>Type [000000] on the merchant code field</li>
+                            <li>Enter amount [xxxxx UGX]</li>
+                            <li>confirm payment by entering your pin and pressing Send.</li>
+                        </ol>
+                        <br>
+                        <span> You will receive information from our team or the finder on how to get your item after
+                            payment has been
+                            confirmed. </span>
+
+                        <p id="line">Thank you for letting us work for you.</p>
+                    </div>
+                    <div id="confirm_no_response">
+                        <p class="text-center help-block" id="finch" style="font-size:105%;">
+                            If the item is not yours <br /><span style="font-weight:bolder; font-family:Verdana,Geneva,sans-serif; font-size:110%;"> Please go to the Point Of Access nearest to you and report your item lost </span>
+                            <br/> OR <br/>
+                            You may try &nbsp;&nbsp; <a href="lost_items_search_form.html" class="btn btn-outline-primary btn-sm" > SEARCHING AGAIN </a>
+                        </p>
+                       
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <br>
+
+    <script src='js/jquery-3.3.1.slim.min.js'></script>
+    <script src='js/popper.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#payment_instructions").hide();
+            $("#confirm_no_response").hide();
+
+            //hiding or showing the payment instructions
+            $('#confirm_yes').click(function () {
+
+                $("#payment_instructions").show();
+                $("#confirm_no_response").hide();
+
+            });
+
+            $('#confirm_no').click(function () {
+
+                $("#payment_instructions").hide();
+                $("#confirm_no_response").show();
+
+            });
+        });
+    </script>
+
+</body>
+
+</html>

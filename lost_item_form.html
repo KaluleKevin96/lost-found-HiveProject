@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hive | Lost and Found Documents</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/fontawesome/css/all.css'>
+
+    <style>
+        .box {
+            background-color: none;
+            /* Green */
+            border: 3px solidwhite;
+            color: black;
+            padding: 20px 20;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-right: 0px;
+            margin-left: 150px;
+            -webkit-transition-duration: 0.4s;
+            /* Safari */
+            transition-duration: 0.4s;
+        }
+
+        #hop {
+            padding-left: 353px;
+            padding-right: 350px;
+        }
+
+        .form-label {
+            font-family: cursive, comic sans;
+            color: black;
+        }
+
+        .lopez {
+
+            text-align: center;
+            /* color: black; */
+            font-family: Verdana, monserrat, open sans, sans-serif;
+            color: black;
+            padding-bottom: 10px;
+            font-weight: bold;
+
+        }
+
+        /* body {
+                
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin:15px;
+                background-image: url("images/books.jpg");
+               
+                } */
+    </style>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="index.html"> LOST & FOUND</a>
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content ->
+            <div class="collapse navbar-collapse" id="basicExampleNav">
+          
+              <!-- Links ->
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+          
+                <!-- Dropdown ->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Services</a>
+                  <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Lost Documents</a>
+                    <a class="dropdown-item" href="#">Found Documents</a>
+                  </div>
+                </li>
+          
+              </ul>
+              <!-- Links -->
+
+        <!-- P.O.A lOGIN modal -->
+        <ul class="navbar-nav ml-auto">
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"> P.O.A Name </a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink"
+                    style="margin: 0.125rem -35px 0px;">
+                    <a class="dropdown-item" href="poa_landing_page.html"> Home </a>
+                    <a class="dropdown-item" href="#"> Edit Your Profile </a>
+                    <a class="dropdown-item" href="#"> <i class="fa fa-sign-out fa-1x"></i> &nbsp;&nbsp; Log Out </a>
+                </div>
+            </li>
+
+        </ul>
+        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                P.O.A LOGIN
+            </button> -->
+
+        <!----form class="form-inline">
+                <div class="md-form my-0">
+                  <input class="form-control mr-sm-2 btn btn-info" type="button" value="P.O.A Login" aria-label="Search">
+                </div>
+              </form-->
+        </div>
+        <!-- Collapsible content -->
+
+    </nav>
+    <!--/.Navbar-->
+
+    <!--form in bootsrap-->
+    <div class="container">
+        <div class="row jumbotron" style="margin: 5% 0%; background-color:ghostwhite; border:1px solid lightslategray;">
+
+            <div class="col-md-10 offset-1">
+
+                <h2 class="lopez">Report Missing Item </h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name of Document Owner:</label>
+                            <input class="form-control" type="text" placeholder="Name of Document Owner">
+
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="name">Enter Date of Birth On Document:</label>
+                            <input class="form-control" type="text" placeholder="Enter Date of Birth On Document">
+                        </div>
+
+                        <div class="form-group col-7">
+                            <label class="form-label" for="name">Enter Clients Contact:</label>
+                            <input class="form-control" type="tel" placeholder="Enter Clients Contact">
+                        </div>
+
+                        <br><br>
+
+                        <a href="success_page.html" class="btn btn-primary">Submit</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="reset" class="btn btn-danger">Reset Form</button>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label" for="case_number"> CATEGORY OF ITEM </label>
+                            <select name="category_of_item" class="form-control" id="category_of_item">
+                                <option value=""> Select Item Category </option>
+                                <option value="all"> All Categories </option>
+                                <option value="national_id"> National ID </option>
+                                <option value="passport"> Passport </option>
+                                <option value="driving_permit"> Driving Permit </option>
+                                <option value="academic_document"> Academic Document </option>
+                                <option value="land_title"> Land Title </option>
+                            </select>
+                        </div>
+
+                        <div class="form-group unique_identifier" id="national_id">
+                            <label class="form-label"> National ID Number (NIN) </label>
+                            <input type="text" class="form-control" name="item_identifier" placeholder="NIN" />
+
+
+                            <div class="help-block">
+                                The National Identification Number <strong> (NIN) </strong>
+                            </div>
+                        </div>
+                        <div class="form-group unique_identifier" id="passport">
+                            <label class="form-label"> Passport Number </label>
+                            <input type="text" class="form-control" name="item_identifier"
+                                placeholder="Passport Number" />
+
+
+                            <div class="help-block">
+                                The passport number
+                            </div>
+                        </div>
+                        <div class="form-group unique_identifier" id="driving_permit">
+                            <label class="form-label"> PERMIT NUMBER </label>
+                            <input type="text" class="form-control" name="item_identifier"
+                                placeholder="Permit Number" />
+
+
+                            <div class="help-block">
+                                The Permit Number
+                            </div>
+                        </div>
+                        <div class="form-group unique_identifier" id="academic_document">
+                            <label class="form-label"> Academic Document Number </label>
+                            <input type="text" class="form-control" name="item_identifier" placeholder="Reg No." />
+
+
+                            <div class="help-block">
+                                Enter a unique number that identifies the document e.g <em>A Registration Number </em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <script src='js/jquery-3.3.1.slim.min.js'></script>
+    <script src='js/popper.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $(".unique_identifier").hide();
+            $("#case_number").hide();
+
+
+            //function for choosing which input to show based on what category of item is chosen
+            $("#category_of_item").change(function () {
+
+                $(this).find("option:selected").each(function () {
+
+                    var optionValue = $(this).attr("value");
+
+                    if (optionValue) {
+
+                        $(".unique_identifier").not("#" + optionValue).hide();
+                        $("#" + optionValue).show();
+
+                    } else {
+
+                        $(".unique_identifier").hide();
+                    }
+                });
+            }).change();
+        });
+    </script>
+</body>
+
+</html>

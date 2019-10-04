@@ -15,118 +15,267 @@
 
 <body>
 
+    <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"> LOST & FOUND </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    
+        <!-- Navbar brand -->
+        <a class="navbar-brand mr-auto" href="index.html"> LOST & FOUND</a>
+    
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
     
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#"> Back Home </a> <!-- <span class="sr-only">(current)</span> -->
+        <!-- Collapsible content ->
+            <div class="collapse navbar-collapse" id="basicExampleNav">
+          
+              <!-- Links ->
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
                 </li>
-               
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+          
+                <!-- Dropdown ->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        More 
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#"> Log Lost Item </a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#"> Log Found Item </a>
-                    </div>
+                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Services</a>
+                  <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Lost Documents</a>
+                    <a class="dropdown-item" href="#">Found Documents</a>
+                  </div>
                 </li>
-            </ul>
-            <div class="form-inline my-2 my-lg-0">
-               <a href="#" class="btn btn-outline-success my-2 my-sm-0"> P.O.A LOG IN </a>
+          
+              </ul>
+              <!-- Links -->
+    
+        <!-- P.O.A lOGIN modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            P.O.A LOGIN
+        </button>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">POINT OF ACCESS LOGIN</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <label for="username">User name or Email</label>
+                            <input type="email" class="form-control" type="text" placeholder="Enter your username or Email">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" placeholder="Type your password">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <p style="color: rgb(61, 25, 25)">Forgot Password? &nbsp;&nbsp; <a href="#">Reset here</a> </p>
+                        <a href="poa_landing_page.html" class="btn btn-primary">Login</a>
+                        <button type="button" class="btn btn-danger">Cancel</button>
+                    </div>
+                </div>
             </div>
         </div>
+    
+        <!----form class="form-inline">
+                <div class="md-form my-0">
+                  <input class="form-control mr-sm-2 btn btn-info" type="button" value="P.O.A Login" aria-label="Search">
+                </div>
+              </form-->
+        </div>
+        <!-- Collapsible content -->
+    
     </nav>
-        <div class="title text-center"> 
-            SEARCH <i class="fa fa-search"></i> FOR SOMETHING YOU HAVE LOST 
-        </div>
-        
-            <div class="info-block">
-                Fill In Some Of The Details <em>(those you may know)</em>() To Search For An Item you're looking for.
-            </div>
-        <br/> <br/>
-        <div class="container">
-            <div class="search_form">
-                
-                <form class="form" action="" method="">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12 col-12">
-                            <div class="form-group">
-                                <label class="" for="case_number"> CATEGORY OF ITEM  </label>
-                                <select name="category_of_item" class="form-control" id="category_of_item">
-                                    <option value=""> Select Item Category </option>
-                                    <option value="all"> All Categories </option>
-                                    <option value="national_id"> National ID </option>
-                                    <option value="passport"> Passport </option>
-                                    <option value="driving_permit"> Driving Permit </option>
-                                    <option value="academic_document"> Academic Document </option>
-                                    <option value="land_title"> Land Title </option>
-                                </select>
+    <!--/.Navbar-->
+
+
+    <div class="title text-center">
+        SEARCH <i class="fa fa-search"></i> FOR SOMETHING YOU HAVE LOST
+    </div>
+
+    <div class="info-block">
+        Fill In Some Of The Details <em>(those you may know)</em> To Search For An Item you're looking for.
+    </div>
+    <br /> <br />
+    <div class="container">
+        <div class="search_form">
+
+            <form class="form" action="" method="">
+                <div class="row">
+                    <div class="col-md-4 col-12 form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="help-block" style="font-size:110%;">
+                                    Have you reported the item lost ?
+                                </div>
                             </div>
-                            
+                            <div class="col-md-6 form-group">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input class="custom-control-input reported_case" type="radio" name="reported_case" id="reported_case_yes" value="case_number">
+                                    <label class="custom-control-label" for="reported_case_yes"> Yes </label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input class="custom-control-input reported_case" name="reported_case" type="radio" id="reported_case_no" value="no">
+                                    <label class="custom-control-label" for="reported_case_no"> No </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-12">
+                        <div class="form-group">
+                            <label class="" for="category_of_item"> CATEGORY OF ITEM </label>
+                            <select name="category_of_item" class="form-control" id="category_of_item">
+                                <option value=""> Select Item Category </option>
+                                <option value="all"> All Categories </option>
+                                <option value="national_id"> National ID </option>
+                                <option value="passport"> Passport </option>
+                                <option value="driving_permit"> Driving Permit </option>
+                                <option value="academic_document"> Academic Document </option>
+                                <option value="land_title"> Land Title </option>
+                            </select>
                             <div class="help-block">
                                 What kind of item is it?
                             </div>
-                            <br/>
-                            <div class="form-group">
-                                <label class="" for="case_number"> UNIQUE ITEM IDENTIFIER  </label>
-                                <input type="text" class="form-control" name="item_identifier" placeholder="Item Identifier"/>
-                            </div>
-                            
+                        </div>
+
+                        <div class="form-group unique_identifier" id="national_id">
+                            <label class=""> National ID Number (NIN) </label>
+                            <input type="text" class="form-control" name="item_identifier" placeholder="NIN" />
+
+
                             <div class="help-block">
-                                Unique Identifier of the item
+                                The National Identification Number <strong> (NIN) </strong>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-12 col-12">
-                            <div class="form-group">
-                                <label class="" for="case_number"> NAME OF OWNER  </label>
-                                <input type="text" class="form-control" name="name_of_owner" placeholder="Owner of Lost Item" />
+                        <div class="form-group unique_identifier" id="passport">
+                            <label class=""> Passport Number </label>
+                            <input type="text" class="form-control" name="item_identifier"
+                                placeholder="Passport Number" />
+
+
+                            <div class="help-block">
+                                The passport number
                             </div>
-                            
+                        </div>
+                        <div class="form-group unique_identifier" id="driving_permit">
+                            <label class=""> PERMIT NUMBER </label>
+                            <input type="text" class="form-control" name="item_identifier"
+                                placeholder="Permit Number" />
+
+
+                            <div class="help-block">
+                                The Permit Number
+                            </div>
+                        </div>
+                        <div class="form-group unique_identifier" id="academic_document">
+                            <label class=""> Academic Document Number </label>
+                            <input type="text" class="form-control" name="item_identifier" placeholder="Reg No." />
+
+
+                            <div class="help-block">
+                                Enter a unique number that identifies the document e.g <em>A Registration Number </em>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-12">
+                        <div class="form-group">
+                            <label class="" for="name_of_owner"> NAME OF OWNER </label>
+                            <input type="text" class="form-control" name="name_of_owner"
+                                placeholder="Owner of Lost Item" />
+
                             <div class="help-block">
                                 <strong> Name of Owner </strong> that is attached onto the lost item.
                             </div>
-                            <br/>
-                            <div class="form-group">
-                                <label class="" for="case_number"> CASE NUMBER  </label>
-                                <input type="text" class="form-control" name="case_number" placeholder="Assigned Case Number" />
-                            </div>
-                            
+                        </div>
+
+                        <div class="form-group case_number" id="case_number">
+                            <label class="" for="case_number"> CASE NUMBER </label>
+                            <input type="text" class="form-control" name="case_number"
+                                placeholder="Assigned Case Number" />
+
                             <div class="help-block">
-                                If you reported your item as lost at a <strong> Point Of Access (P.O.A) </strong> , enter the case number you were
-                                given.
+                                If you reported your item as lost at a <strong> Point Of Access (P.O.A) </strong> ,
+                                enter the case number you were given.
                             </div>
                         </div>
-                        <div class="col-md-2 col-sm-12 col-12">
-                            <div class="form-group">
-                                <label class="" for="case_number"> DATE OF BIRTH  </label>
-                                <input type="date" class="form-control" name="dob" />
-                            </div>
-                            
-                            <div class="help-block">
-                               Date of birth registered on document
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-12 col-12">
-                            <!-- <input type="submit" class="btn btn-md btn-primary search_button" value="SEARCH" name="search_button"/> -->
-                            <a href="search_results.html" class="btn btn-md btn-primary search_button" title="SEARCH" > SEARCH</a>
-                        </div>
+
                     </div>
-                </form>
-            </div>
+                    <div class="col-md-2 col-sm-12 col-12">
+                        <div class="form-group">
+                            <label class="" for="dob"> DATE OF BIRTH </label>
+                            <input type="date" class="form-control" name="dob" />
+
+                            <div class="help-block">
+                                Date of birth registered on document
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-2 col-sm-12 col-12">
+                        <!-- <input type="submit" class="btn btn-md btn-primary search_button" value="SEARCH" name="search_button"/> -->
+                        <a href="search_results.html" class="btn btn-md btn-primary search_button" title="SEARCH">
+                            SEARCH</a>
+                    </div>
+                </div>
+            </form>
         </div>
+    </div>
 
     <script src='js/jquery-3.3.1.slim.min.js'></script>
     <script src='js/popper.min.js'></script>
     <script src='js/bootstrap.min.js'></script>
+
+    <script>
+        $(document).ready(function () {
+        
+            $(".unique_identifier").hide();
+            $("#case_number").hide();
+
+//hiding or showing the case number text box based on whether or not item was reported lost
+             $('.reported_case').click(function () {
+
+                var inputValue = $(this).attr("value");
+
+                var targetBox = $("#" + inputValue);
+
+                $(".case_number").not(targetBox).hide();
+
+                $(targetBox).show();
+            });
+
+            //function for choosing which input to show based on what category of item is chosen
+            $("#category_of_item").change(function () {
+
+                $(this).find("option:selected").each(function () {
+
+                    var optionValue = $(this).attr("value");
+
+                    if (optionValue) {
+
+                        $(".unique_identifier").not("#" + optionValue).hide();
+                        $("#" + optionValue).show();
+
+                    } else {
+
+                        $(".unique_identifier").hide();
+                    }
+                });
+            }).change();
+        });
+    </script>
 </body>
 
 </html>
